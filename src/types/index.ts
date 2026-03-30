@@ -1,5 +1,13 @@
 import type { ReactNode } from "react"
 
+export interface Master {
+  name: string
+  specialty: string
+  rating: number
+  reviews: number
+  avatar: string
+}
+
 export interface Section {
   id: string
   title: string
@@ -7,6 +15,7 @@ export interface Section {
   content?: string
   showButton?: boolean
   buttonText?: string
+  masters?: Master[]
 }
 
 export interface SectionProps extends Section {
