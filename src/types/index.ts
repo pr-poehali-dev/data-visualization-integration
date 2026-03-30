@@ -16,6 +16,7 @@ export interface Section {
   showButton?: boolean
   buttonText?: string
   masters?: Master[]
+  showForm?: boolean
 }
 
 export interface SectionProps extends Section {
